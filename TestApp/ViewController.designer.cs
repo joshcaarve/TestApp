@@ -64,19 +64,19 @@ namespace TestApp
 				DuplicatesButton = null;
 			}
 
+			if (ProcessLog != null) {
+				ProcessLog.Dispose ();
+				ProcessLog = null;
+			}
+
 			if (MissingButton != null) {
 				MissingButton.Dispose ();
 				MissingButton = null;
 			}
 
-			if (OrphansButton != null) {
-				OrphansButton.Dispose ();
-				OrphansButton = null;
-			}
-
-			if (ProcessLog != null) {
-				ProcessLog.Dispose ();
-				ProcessLog = null;
+			if (UntaggedButton != null) {
+				UntaggedButton.Dispose ();
+				UntaggedButton = null;
 			}
 
 			if (UnanalyzedButton != null) {
@@ -89,9 +89,9 @@ namespace TestApp
 				UnreferencedButton = null;
 			}
 
-			if (UntaggedButton != null) {
-				UntaggedButton.Dispose ();
-				UntaggedButton = null;
+			if (OrphansButton != null) {
+				OrphansButton.Dispose ();
+				OrphansButton = null;
 			}
 		}
 	}

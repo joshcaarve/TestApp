@@ -182,37 +182,49 @@
                                     <action selector="DuplicateButtonCheck:" target="XfG-lQ-9wD" id="mhj-hp-QaY"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-b4-V9Z">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-b4-V9Z" userLabel="Missing Button">
                                 <rect key="frame" x="134" y="126" width="69" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Missing" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BHB-Qt-I6I">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="MissingButtonCheck:" target="XfG-lQ-9wD" id="Wvd-Qn-OOH"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-79-Gvu">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-79-Gvu" userLabel="Untagged Button">
                                 <rect key="frame" x="134" y="89" width="82" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Untagged" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TpL-5H-wD9">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="UntaggedButtonCheck:" target="XfG-lQ-9wD" id="66j-LI-fC4"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-rR-l7E">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-rR-l7E" userLabel="Unanalyzed Button">
                                 <rect key="frame" x="134" y="56" width="93" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Unanalyzed" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WX3-vx-YfF">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="UnanalyzedButtonCheck:" target="XfG-lQ-9wD" id="o5E-jC-Kh0"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bh-PB-eRK">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bh-PB-eRK" userLabel="Unreferenced Button">
                                 <rect key="frame" x="134" y="22" width="105" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Unreferenced" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="oto-UY-eTe">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="UnreferencedButtonCheck:" target="XfG-lQ-9wD" id="0rL-vD-sYT"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-3m-9Vm">
                                 <rect key="frame" x="134" y="238" width="52" height="16"/>
@@ -252,7 +264,7 @@
                                     <action selector="RadioButtonsCheck:" target="XfG-lQ-9wD" id="a2Y-GJ-W0s"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-aD-MEo">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-aD-MEo" userLabel="Execute Button">
                                 <rect key="frame" x="14" y="17" width="89" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Execute" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vcp-9Z-7KZ">
@@ -260,7 +272,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="ExecuteButtonPressed:" target="XfG-lQ-9wD" id="iYy-fy-9CO"/>
+                                    <action selector="ExecuteButtonCheck:" target="XfG-lQ-9wD" id="PBr-KQ-TYf"/>
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MF6-FO-6KS">
@@ -283,11 +295,27 @@
                                     <action selector="RadioButtonsCheck:" target="XfG-lQ-9wD" id="6VB-mK-QVY"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7TU-pS-Yh6" userLabel="Orphans Button">
+                                <rect key="frame" x="134" y="185" width="74" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Orphans" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="nDl-jZ-s98">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OrphansButtonCheck:" target="XfG-lQ-9wD" id="Ohv-8a-Yjv"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="DuplicatesButton" destination="Gii-N7-fiZ" id="UP7-jR-PQ6"/>
+                        <outlet property="MissingButton" destination="UGp-b4-V9Z" id="3Ss-om-eoJ"/>
+                        <outlet property="OrphansButton" destination="7TU-pS-Yh6" id="TFT-Ii-i8o"/>
                         <outlet property="ProcessLog" destination="MF6-FO-6KS" id="UEI-pg-Iyn"/>
+                        <outlet property="UnanalyzedButton" destination="ZBz-rR-l7E" id="gtS-HA-a4H"/>
+                        <outlet property="UnreferencedButton" destination="3bh-PB-eRK" id="RAq-nU-AYo"/>
+                        <outlet property="UntaggedButton" destination="ojt-79-Gvu" id="cz7-lp-4n1"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
